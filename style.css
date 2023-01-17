@@ -6,7 +6,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  color: #343a40;
+  color: #212529;
   line-height: 1.5;
   /* border-bottom: 10px solid rgb(255, 115, 0); */
 }
@@ -26,9 +26,9 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 3px solid rgb(255, 115, 0);
-  padding-top: 8px;
-  padding-bottom: 8px;
+  border-bottom: 2px solid rgb(255, 115, 0);
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 nav {
@@ -48,7 +48,7 @@ a:link {
   color: rgba(255, 255, 255, 0.842);
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 a:visited {
@@ -74,4 +74,92 @@ a:active {
   width: 24px;
   height: 24px;
   vertical-align: bottom;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.text-on-image {
+  position: relative;
+}
+
+.header-text {
+  margin: auto;
+  width: 750px;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.abstract-box {
+  width: 750px;
+  margin: auto;
+}
+
+.img-abstract {
+  width: 750px;
+  height: auto;
+  left: 0;
+  bottom: 1px;
+  position: absolute;
+  opacity: 0.6;
+}
+
+.header-title {
+  font-size: 56px;
+  font-weight: 300;
+  padding-bottom: 16px;
+  position: relative;
+  padding: 16px 30px;
+  margin-bottom: 32px;
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.02);
+  letter-spacing: 1px;
+}
+
+/* span {
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 115, 0);
+} */
+
+.header-desc {
+  color: #495057b2;
+  font-size: 16px;
+  padding: 0 90px;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.btn {
+  border: none;
+  text-decoration: none;
+  padding: 14px 22px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 100px;
+  display: inline-block;
+  background: linear-gradient(#ff5900, #c21e58);
+  position: relative;
+  z-index: 1;
+  transition: color 0.5s ease-out;
+}
+.btn:before {
+  background: #91a5f4;
+  background: linear-gradient(#c21e58, #5c1397);
+  border-radius: 100px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+.btn:hover:before {
+  opacity: 1;
 }

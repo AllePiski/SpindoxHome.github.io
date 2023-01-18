@@ -125,6 +125,22 @@ nav {
   letter-spacing: 1px;
 }
 
+.abimg {
+  position: absolute;
+  width: 400px;
+  height: auto;
+}
+
+.img-abstract2 {
+  left: 0;
+  opacity: 0.5;
+}
+
+.img-abstract3 {
+  right: 0;
+  opacity: 0.3;
+}
+
 /* span {
   text-transform: uppercase;
   text-decoration: underline;
@@ -149,14 +165,14 @@ nav {
   color: #fff;
   border-radius: 100px;
   display: inline-block;
-  background: linear-gradient(#ff5900, #c21e58);
+  background: linear-gradient(#ff5900, #ff0059);
   position: relative;
   z-index: 1;
   transition: color 0.5s ease-out;
 }
 .btn:before {
   background: #91a5f4;
-  background: linear-gradient(#c21e58, #5c1397);
+  background: linear-gradient(#ff1d6c, #7813979f);
   border-radius: 100px;
   content: "";
   width: 100%;
@@ -216,9 +232,11 @@ nav {
   text-align: start;
   font-weight: 300;
   color: #495057b7;
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: 1.2px;
   font-size: 18px;
+  position: relative;
+  text-shadow: 1px 1px 0px #fff;
 }
 
 span {
@@ -253,7 +271,10 @@ h3 {
   text-transform: uppercase;
   font-weight: lighter;
   letter-spacing: 1px;
-  background: -webkit-linear-gradient(hsl(19, 100%, 50%), rgba(255, 0, 180, 1));
+  background: -webkit-linear-gradient(
+    hsl(19, 100%, 50%),
+    rgba(255, 0, 179, 0.9)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -343,4 +364,5 @@ h3 {
 .join-contacts {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
 }

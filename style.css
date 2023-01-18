@@ -31,7 +31,6 @@ h6 {
   justify-content: space-between;
   border-bottom: 2px solid rgb(255, 115, 0);
   padding-top: 2px;
-  padding-bottom: 2px;
   z-index: 100;
 }
 
@@ -98,7 +97,7 @@ nav {
   margin: auto;
   width: 750px;
   text-align: center;
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .abstract-box {
@@ -229,6 +228,8 @@ span {
 
 .scheme-box {
   overflow: scroll;
+  padding: 20px 20px;
+  padding-right: 50px;
 }
 
 .scheme-5 {
@@ -237,11 +238,11 @@ span {
 }
 
 .card {
-  width: 400px;
+  width: 380px;
   background-color: #1f2124;
   text-align: center;
   margin: 12px 4px;
-  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.6); */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   border-radius: 22px;
 }
 
@@ -296,4 +297,38 @@ h3 {
 
 .card-a:hover {
   background-size: 0 3px, 100% 1px;
+}
+
+.clients {
+  width: 90%;
+  margin: auto;
+  margin-top: 64px;
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+.heading-clienti {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  border-bottom: 3px solid rgba(255, 115, 0, 0.5);
+  border-radius: 22px;
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  justify-items: center;
+  row-gap: 32px;
+}
+
+.logos img {
+  height: 4rem;
+  filter: invert(50%);
+  filter: brightness(0);
+  opacity: 50%;
 }

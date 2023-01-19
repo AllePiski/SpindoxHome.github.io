@@ -97,7 +97,7 @@ nav {
   margin: auto;
   width: 750px;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 64px;
 }
 
 .abstract-box {
@@ -109,19 +109,19 @@ nav {
   width: 750px;
   height: auto;
   left: 0;
-  bottom: 1px;
+  bottom: -10%;
   position: absolute;
   opacity: 0.6;
 }
 
 .header-title {
   font-size: 56px;
-  font-weight: 300;
+  font-weight: 100;
   padding-bottom: 16px;
   position: relative;
-  padding: 16px 30px;
-  margin-bottom: 32px;
-  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0, 0, 0, 0.02);
+  padding: 16px 0;
+  margin-bottom: 48px;
+  text-shadow: 4px 2px 0px #fff, 5px 4px 0px rgba(0, 0, 0, 0.05);
   letter-spacing: 1px;
 }
 
@@ -133,7 +133,7 @@ nav {
 
 .img-abstract2 {
   left: 0;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .img-abstract3 {
@@ -151,7 +151,7 @@ nav {
   color: #495057b2;
   font-size: 16px;
   padding: 0 90px;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   letter-spacing: 1px;
   font-weight: 100;
 }
@@ -191,7 +191,7 @@ nav {
 .video-player {
   width: 90%;
   margin: auto;
-  margin-top: 128px;
+  margin-top: 132px;
 }
 
 .video {
@@ -231,7 +231,7 @@ nav {
 .pg {
   text-align: start;
   font-weight: 300;
-  color: #495057b7;
+  color: #495057d0;
   line-height: 1.6;
   letter-spacing: 1.2px;
   font-size: 18px;
@@ -245,9 +245,10 @@ span {
 }
 
 .scheme-box {
+  width: 90%;
+  margin: auto;
   overflow: scroll;
-  padding: 20px 20px;
-  padding-right: 50px;
+  padding: 20px 15px;
 }
 
 .scheme-5 {
@@ -260,8 +261,13 @@ span {
   background-color: #1f2124;
   text-align: center;
   margin: 12px 4px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.8);
   border-radius: 22px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.4);
 }
 
 h3 {
@@ -362,7 +368,63 @@ h3 {
 }
 
 .join-contacts {
+  background-color: #1f2124;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border-radius: 22px;
+}
+
+.app-form-control {
+  width: 90%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: rgb(255, 115, 0);
+}
+
+.message-area {
+  height: 80px;
+  font-family: "Inter", sans-serif;
+}
+
+.message-area::placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+.section-title {
+  margin-bottom: 24px;
+}
+
+.join-title {
+  margin-left: 48px;
+}
+
+.btn-jobs {
+  margin-left: 48px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.form {
+  margin-top: 54px;
+}
+
+.btn-send {
+  letter-spacing: 1.5px;
+  margin-top: 68px;
 }

@@ -428,3 +428,25 @@ h3 {
   letter-spacing: 1.5px;
   margin-top: 68px;
 }
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-footer {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer {
+  padding: 9.6rem 0;
+}
+
+.footer-logo {
+  width: 180%;
+}

@@ -265,11 +265,6 @@ span {
   border-radius: 22px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.4);
-}
-
 h3 {
   font-size: 24px;
   margin-top: 48px;
@@ -367,13 +362,51 @@ h3 {
   /* padding: 4.8rem 0 3.2rem 0; */
 }
 
-.join-contacts {
-  background-color: #1f2124;
+.card-contatti {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 32px;
+  grid-template-columns: 1fr, 1fr;
+  background-color: #1f2124;
+  column-gap: 128px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   border-radius: 22px;
+}
+
+.head-joinus {
+  grid-column: 1/2;
+  margin-bottom: 24px;
+}
+
+.p-joinus {
+  grid-column: 1/2;
+}
+
+.pc {
+  text-align: start;
+  padding: 0 48px;
+  padding-bottom: 18px;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  color: #dee2e6e1;
+  font-weight: 100;
+}
+
+.btn-joinun {
+  grid-column: 1/2;
+  margin-left: 48px;
+}
+
+.head-contactus {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.join-title {
+  padding-left: 48px;
+}
+
+.form-contactus {
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 .app-form-control {
@@ -397,6 +430,10 @@ h3 {
   border-bottom-color: rgb(255, 115, 0);
 }
 
+.btn-contact-card {
+  margin-bottom: 32px;
+}
+
 .message-area {
   height: 80px;
   font-family: "Inter", sans-serif;
@@ -406,27 +443,8 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
-.section-title {
-  margin-bottom: 24px;
-}
-
-.join-title {
-  margin-left: 48px;
-}
-
-.btn-jobs {
-  margin-left: 48px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.form {
-  margin-top: 54px;
-}
-
-.btn-send {
-  letter-spacing: 1.5px;
-  margin-top: 68px;
+.div-btn-send {
+  grid-column: 2/3;
 }
 
 .grid {
